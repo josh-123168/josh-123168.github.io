@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script id="interaxai-widget-config">
+    window.INTERAX_AI = {
+      id: "6716c5174d95956eba1f5cc2",
+      theme: "light",
+    };
+    const _interaxAI=async()=>{const t=await fetch(`https://interaxai.com
+    /api/embed/version?widgetId=${INTERAX_AI.id}`).then((t=>t.text())),
+    e=document.createElement("script");e.id="interaxai-widget-script",
+    e.src=`https://cdn.jsdelivr.net/gh/interaxai/cdn@${t}/dist/bundle.js`,
+    document.head.appendChild(e)};_interaxAI();
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="interaxai-widget"></div>
 </body>
 </html>
